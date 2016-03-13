@@ -55,7 +55,7 @@ int LinkList::ClearList()
 	return OK;
 }
 
-int LinkList::GetElem(int index, ELEMTYPE &elem)
+int LinkList::GetElem(int index, int &elem)
 {
 	if((index <= 0) || (index > length))
 	{
@@ -72,7 +72,7 @@ int LinkList::GetElem(int index, ELEMTYPE &elem)
 	return OK;
 }
 
-int LinkList::InsertElem(int index, ELEMTYPE &elem)
+int LinkList::InsertElem(int index, int &elem)
 {
 	if((index <= 0) && (index > (length +1)))
 	{
@@ -103,7 +103,7 @@ int LinkList::InsertElem(int index, ELEMTYPE &elem)
 	return OK;
 }
 
-int LinkList::DeleteElem(int index, ELEMTYPE &elem)
+int LinkList::DeleteElem(int index, int &elem)
 {
 	if((index <= 0) && (index > length))
 	{
